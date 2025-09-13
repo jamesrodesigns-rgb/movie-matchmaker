@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add project-wide resets or variables here */
+html, body {
+  margin: 0;
+  padding: 0;
+}
