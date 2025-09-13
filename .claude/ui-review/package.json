@@ -1,0 +1,16 @@
+{
+  "name": "ui-review",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install:pw": "npx playwright install --with-deps",
+    "test": "playwright test --reporter=list",
+    "test:headed": "playwright test --headed --project=chromium-desktop",
+    "test:mobile": "playwright test --project=chromium-mobile",
+    "test:axe": "A11Y=1 playwright test --project=chromium-desktop"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "axe-core": "^4.9.1"
+  }
+}
